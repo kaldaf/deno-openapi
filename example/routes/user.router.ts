@@ -6,4 +6,8 @@ const userController = new UserController();
 
 userRouter.get("/", userController.get).post("/", userController.post);
 
-export default { router: userRouter, middlewares: [userController], summary: "User endpoint" };
+export default {
+  router: userRouter,
+  middlewares: [userController],
+  summary: "User endpoint",
+};

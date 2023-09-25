@@ -26,7 +26,7 @@ export class App {
         version: "0.4",
         title: "Deno OpenApi"
       },
-      mappingPaths: ['./controller', './services'],
+      mappingPaths: ['./controllers'],
       routes: allowedRouters,
     }
     const _specification = denoOpenapi(swagger);
